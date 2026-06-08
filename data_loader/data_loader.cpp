@@ -17,7 +17,7 @@ vector<int> generate_reference_point(const vector<Transaction>& data, const stri
     int n = data.size();
     map<int, int> freq_map;
     
-    // liczymy ilosc wystapien 
+    // liczymy liczbe wystapien 
     for(const auto& t : data) {
         for(int c : t.items) {
             freq_map[c]++;
@@ -123,7 +123,7 @@ vector<Transaction> load_zoo_data(const string& filename) {
             int val = stoi(token);
             char encoded_item;
 
-            if (attr_idx == 12) { // Cecha nr 13 to 'legs' (liczba nóg)
+            if (attr_idx == 12) { // liczba nog
                 int sub_offset = 0;
                 if (val == 2) sub_offset = 1;
                 else if (val == 4) sub_offset = 2;
@@ -131,7 +131,7 @@ vector<Transaction> load_zoo_data(const string& filename) {
                 else if (val == 6) sub_offset = 4;
                 else if (val == 8) sub_offset = 5; // max to 8 nóg
                 encoded_item = 'A' + offsets[attr_idx] + sub_offset;
-            } else { // Zwykle prawda/falsz
+            } else { 
                 encoded_item = 'A' + offsets[attr_idx] + val;
             }
             t.items.push_back(encoded_item);
