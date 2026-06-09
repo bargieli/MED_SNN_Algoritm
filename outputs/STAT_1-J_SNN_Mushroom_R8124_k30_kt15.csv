@@ -6,13 +6,13 @@ k: 30, kt: 15
 Calkowita liczba wyliczen 1-J: 65991252
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 0.0123845
-Prep (odleglosci od Ref): 1.625e-06
-Obliczenie kNN: 7.23116
-Grupowanie SNN: 0.444369
-Obliczenie RAND: 0.00290054
-Zapis do plikow: 0.0424204
-CALKOWITY CZAS: 7.7361
+Odczyt: 0.0170358
+Prep (odleglosci od Ref): 1.792e-06
+Obliczenie kNN: 7.31462
+Grupowanie SNN: 0.448685
+Obliczenie RAND: 0.002969
+Zapis do plikow: 2.96307
+CALKOWITY CZAS: 10.75
 
 Rzeczywiste grupy - liczba: 2 (Min: 3916, Max: 4208, Avg: 4062, StdDev: 146)
 Wykryte grupy     - liczba: 5978 (Min: 1, Max: 96, Avg: 1.35898, StdDev: 2.85127)

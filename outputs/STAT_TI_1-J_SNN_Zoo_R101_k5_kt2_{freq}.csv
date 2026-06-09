@@ -1,0 +1,23 @@
+Nazwa pliku: ../data/zoo.data
+Liczba unikatowych pozycji: 36
+Srednia liczba pozycji w rekordzie: 16
+Liczba rekordow: 101
+k: 5, kt: 2
+Rekord referencyjny: {A, C, F, G, I, K, N, P, R, T, U, W, `, a, c}
+Calkowita liczba wyliczen 1-J: 8277
+
+--- CZASY WYKONANIA [s] ---
+Odczyt: 0.000296667
+Prep (odleglosci od Ref): 1.1041e-05
+Obliczenie kNN: 0.00115904
+Grupowanie SNN: 5.375e-05
+Obliczenie RAND: 3.8709e-05
+Zapis do plikow: 0.000812333
+CALKOWITY CZAS: 0.00984712
+
+Rzeczywiste grupy - liczba: 7 (Min: 4, Max: 41, Avg: 14.4286, StdDev: 11.9386)
+Wykryte grupy     - liczba: 32 (Min: 1, Max: 10, Avg: 3.15625, StdDev: 2.57524)
+|TP|: 187
+|TN|: 3845
+Liczba par rekordow: 5050
+Wartosc indeksu RAND: 0.798416

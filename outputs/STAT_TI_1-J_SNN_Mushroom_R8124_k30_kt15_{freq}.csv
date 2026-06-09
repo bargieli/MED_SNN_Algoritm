@@ -7,13 +7,13 @@ Rekord referencyjny: {402, 602, 699, 798, 1016, 1215, 1315, 1419, 1519, 1612, 17
 Calkowita liczba wyliczen 1-J: 64070531
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 0.0134295
-Prep (odleglosci od Ref): 0.000664084
-Obliczenie kNN: 7.16549
-Grupowanie SNN: 0.446199
-Obliczenie RAND: 0.00286088
-Zapis do plikow: 0.0437275
-CALKOWITY CZAS: 7.6749
+Odczyt: 3.04829
+Prep (odleglosci od Ref): 0.000597041
+Obliczenie kNN: 7.30704
+Grupowanie SNN: 0.451417
+Obliczenie RAND: 0.00593275
+Zapis do plikow: 3.57926
+CALKOWITY CZAS: 14.3935
 
 Rzeczywiste grupy - liczba: 2 (Min: 3916, Max: 4208, Avg: 4062, StdDev: 146)
 Wykryte grupy     - liczba: 5978 (Min: 1, Max: 96, Avg: 1.35898, StdDev: 2.85127)

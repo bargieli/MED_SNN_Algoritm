@@ -7,13 +7,13 @@ Rekord referencyjny: {A, B, C, D, E, F, U, V, W, X, Y, Z}
 Calkowita liczba wyliczen 1-J: 56
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 2.7167e-05
-Prep (odleglosci od Ref): 5.84e-07
-Obliczenie kNN: 9.542e-06
-Grupowanie SNN: 3.75e-06
-Obliczenie RAND: 4.625e-06
-Zapis do plikow: 0.000632709
-CALKOWITY CZAS: 0.0198472
+Odczyt: 1.3792e-05
+Prep (odleglosci od Ref): 3.34e-07
+Obliczenie kNN: 3.584e-06
+Grupowanie SNN: 8.34e-07
+Obliczenie RAND: 4.292e-06
+Zapis do plikow: 2.49704
+CALKOWITY CZAS: 2.50152
 
 Rzeczywiste grupy - liczba: 2 (Min: 4, Max: 4, Avg: 4, StdDev: 0)
 Wykryte grupy     - liczba: 2 (Min: 4, Max: 4, Avg: 4, StdDev: 0)
