@@ -1,0 +1,23 @@
+Nazwa pliku: ../data/house-votes-84.data
+Liczba unikatowych pozycji: 48
+Srednia liczba pozycji w rekordzie: 16
+Liczba rekordow: 435
+k: 15, kt: 7
+Rekord referencyjny: {B, G, K, P, S, V, `, c, h, l, n}
+Calkowita liczba wyliczen 1-J: 176946
+
+--- CZASY WYKONANIA [s] ---
+Odczyt: 0.000802041
+Prep (odleglosci od Ref): 5.0417e-05
+Obliczenie kNN: 0.0263804
+Grupowanie SNN: 0.00211175
+Obliczenie RAND: 0.000129667
+Zapis do plikow: 0.00247262
+CALKOWITY CZAS: 0.0381499
+
+Rzeczywiste grupy - liczba: 2 (Min: 168, Max: 267, Avg: 217.5, StdDev: 49.5)
+Wykryte grupy     - liczba: 143 (Min: 1, Max: 53, Avg: 3.04196, StdDev: 6.99238)
+|TP|: 3673
+|TN|: 44589
+Liczba par rekordow: 94395
+Wartosc indeksu RAND: 0.511277

@@ -1,0 +1,22 @@
+Nazwa pliku: SampleData
+Liczba unikatowych pozycji: 12
+Srednia liczba pozycji w rekordzie: 3.75
+Liczba rekordow: 8
+k: 3, kt: 1
+Calkowita liczba wyliczen 1-J: 56
+
+--- CZASY WYKONANIA [s] ---
+Odczyt: 3.375e-06
+Prep (odleglosci od Ref): 1.25e-07
+Obliczenie kNN: 5.125e-06
+Grupowanie SNN: 1.375e-06
+Obliczenie RAND: 2.5e-06
+Zapis do plikow: 0.000325125
+CALKOWITY CZAS: 0.00545654
+
+Rzeczywiste grupy - liczba: 2 (Min: 4, Max: 4, Avg: 4, StdDev: 0)
+Wykryte grupy     - liczba: 2 (Min: 4, Max: 4, Avg: 4, StdDev: 0)
+|TP|: 12
+|TN|: 16
+Liczba par rekordow: 28
+Wartosc indeksu RAND: 1

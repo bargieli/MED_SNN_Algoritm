@@ -1,0 +1,23 @@
+Nazwa pliku: ../data/agaricus-lepiota.data
+Liczba unikatowych pozycji: 116
+Srednia liczba pozycji w rekordzie: 21.6947
+Liczba rekordow: 8124
+k: 30, kt: 15
+Rekord referencyjny: {402, 602, 699, 798, 1016, 1215, 1315, 1419, 1519, 1612, 1719, 1811}
+Calkowita liczba wyliczen 1-J: 64070531
+
+--- CZASY WYKONANIA [s] ---
+Odczyt: 0.0134295
+Prep (odleglosci od Ref): 0.000664084
+Obliczenie kNN: 7.16549
+Grupowanie SNN: 0.446199
+Obliczenie RAND: 0.00286088
+Zapis do plikow: 0.0437275
+CALKOWITY CZAS: 7.6749
+
+Rzeczywiste grupy - liczba: 2 (Min: 3916, Max: 4208, Avg: 4062, StdDev: 146)
+Wykryte grupy     - liczba: 5978 (Min: 1, Max: 96, Avg: 1.35898, StdDev: 2.85127)
+|TP|: 25758
+|TN|: 16478528
+Liczba par rekordow: 32995626
+Wartosc indeksu RAND: 0.500196
