@@ -4,20 +4,20 @@ Srednia liczba pozycji w rekordzie: 21.6947
 Liczba rekordow: 8124
 k: 30, kt: 15
 Rekord referencyjny: {402, 602, 699, 798, 1016, 1215, 1315, 1419, 1519, 1612, 1719, 1811}
-Calkowita liczba wyliczen 1-J: 64070531
+Calkowita liczba wyliczen 1-J: 64055716
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 3.04829
-Prep (odleglosci od Ref): 0.000597041
-Obliczenie kNN: 7.30704
-Grupowanie SNN: 0.451417
-Obliczenie RAND: 0.00593275
-Zapis do plikow: 3.57926
-CALKOWITY CZAS: 14.3935
+Odczyt: 0.0121907
+Prep (odleglosci od Ref): 0.000811333
+Obliczenie kNN: 7.72276
+Grupowanie SNN: 0.465246
+Obliczenie RAND: 0.00284196
+Zapis do plikow: 0.0388145
+CALKOWITY CZAS: 8.24618
 
 Rzeczywiste grupy - liczba: 2 (Min: 3916, Max: 4208, Avg: 4062, StdDev: 146)
-Wykryte grupy     - liczba: 5978 (Min: 1, Max: 96, Avg: 1.35898, StdDev: 2.85127)
-|TP|: 25758
+Wykryte grupy     - liczba: 5658 (Min: 1, Max: 139, Avg: 1.43584, StdDev: 3.12119)
+|TP|: 29330
 |TN|: 16478528
 Liczba par rekordow: 32995626
-Wartosc indeksu RAND: 0.500196
+Wartosc indeksu RAND: 0.500304

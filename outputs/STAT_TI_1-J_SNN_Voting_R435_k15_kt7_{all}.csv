@@ -7,17 +7,17 @@ Rekord referencyjny: {A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T
 Calkowita liczba wyliczen 1-J: 188790
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 0.000531375
-Prep (odleglosci od Ref): 6.825e-05
-Obliczenie kNN: 0.0210923
-Grupowanie SNN: 0.00104087
-Obliczenie RAND: 0.00011175
-Zapis do plikow: 0.00174975
-CALKOWITY CZAS: 0.0304879
+Odczyt: 0.000391625
+Prep (odleglosci od Ref): 5.1e-05
+Obliczenie kNN: 0.0167921
+Grupowanie SNN: 0.000956083
+Obliczenie RAND: 0.000103708
+Zapis do plikow: 0.00192467
+CALKOWITY CZAS: 0.0248531
 
 Rzeczywiste grupy - liczba: 2 (Min: 168, Max: 267, Avg: 217.5, StdDev: 49.5)
-Wykryte grupy     - liczba: 143 (Min: 1, Max: 53, Avg: 3.04196, StdDev: 6.99238)
-|TP|: 3673
-|TN|: 44589
+Wykryte grupy     - liczba: 144 (Min: 1, Max: 53, Avg: 3.02083, StdDev: 6.97263)
+|TP|: 3678
+|TN|: 44594
 Liczba par rekordow: 94395
-Wartosc indeksu RAND: 0.511277
+Wartosc indeksu RAND: 0.511383

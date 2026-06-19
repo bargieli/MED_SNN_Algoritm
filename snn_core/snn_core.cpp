@@ -2,11 +2,11 @@
 #include <map>
 #include <cmath>
 #include <chrono>
+#include <algorithm>
 
 double jaccard_distance(const vector<int>& a, const vector<int>& b) {
     int i = 0, j = 0, wspolne = 0;
     
-    // Zapisanie wymiarów do zmiennych typu int zapobiega problemom signed/unsigned
     int len_a = a.size();
     int len_b = b.size();
     
@@ -17,10 +17,10 @@ double jaccard_distance(const vector<int>& a, const vector<int>& b) {
             j++; 
         }
         else if (a[i] < b[j]) {
-            i++; // Zwiększamy tylko lewy wskaźnik
+            i++; 
         }
         else {
-            j++; // Zwiększamy tylko prawy wskaźnik
+            j++; 
         }
     }
     
@@ -81,19 +81,25 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
     auto t_prep_start = chrono::high_resolution_clock::now();
     
     vector<double> dist_to_R(n, 0.0);
+    vector<int> sorted_indices(n);
+    for (int i = 0; i < n; i++) sorted_indices[i] = i;
     
 
     if (use_ti) {
         for (int i = 0; i < n; i++) {
             dist_to_R[i] = jaccard_distance(data[i].items, R_point);
         }
+
+        // dodane
+        sort(sorted_indices.begin(), sorted_indices.end(), [&](int a, int b) {
+            return dist_to_R[a] < dist_to_R[b];
+        });
     }
 
     auto t_prep_end = chrono::high_resolution_clock::now();
     result.time_prep = chrono::duration<double>(t_prep_end - t_prep_start).count();
-
-
     auto t_knn_start = chrono::high_resolution_clock::now();
+    
     
     for (int i = 0; i < n; i++) {
         vector<int> aktualni_sasiedzi;
@@ -102,7 +108,9 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
         bool maxEps_set = false;
         double local_max_naive = 0.0;
         
-        for (int j = 0; j < n; j++) {
+        for (int idx = 0; idx < n; idx++) {
+            int j = sorted_indices[idx];
+
             if (i == j) continue;
             
             double eps = 1.0; 
@@ -117,7 +125,12 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
                 }
                 
                 if (use_ti) {
-                    if (abs(dist_to_R[i] - dist_to_R[j]) > eps) {
+                    double diff = dist_to_R[j] - dist_to_R[i];
+
+                    if (diff > eps) {
+                        break; 
+                    }
+                    if (-diff > eps) { 
                         continue; 
                     }
                 }

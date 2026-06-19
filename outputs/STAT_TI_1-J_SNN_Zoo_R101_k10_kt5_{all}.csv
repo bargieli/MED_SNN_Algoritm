@@ -3,16 +3,17 @@ Liczba unikatowych pozycji: 36
 Srednia liczba pozycji w rekordzie: 16
 Liczba rekordow: 101
 k: 10, kt: 5
+Rekord referencyjny: {A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, [, \, ], ^, _, `, a, b, c, d}
 Calkowita liczba wyliczen 1-J: 10100
 
 --- CZASY WYKONANIA [s] ---
-Odczyt: 0.0001815
-Prep (odleglosci od Ref): 1.66e-07
-Obliczenie kNN: 0.000816875
-Grupowanie SNN: 5.9625e-05
-Obliczenie RAND: 1.7e-05
-Zapis do plikow: 0.000636333
-CALKOWITY CZAS: 0.00668812
+Odczyt: 0.000172416
+Prep (odleglosci od Ref): 9.167e-06
+Obliczenie kNN: 0.000806458
+Grupowanie SNN: 5.8792e-05
+Obliczenie RAND: 1.7167e-05
+Zapis do plikow: 0.000535792
+CALKOWITY CZAS: 0.00781667
 
 Rzeczywiste grupy - liczba: 7 (Min: 4, Max: 41, Avg: 14.4286, StdDev: 11.9386)
 Wykryte grupy     - liczba: 17 (Min: 1, Max: 20, Avg: 5.94118, StdDev: 6.61967)

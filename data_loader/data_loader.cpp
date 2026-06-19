@@ -42,7 +42,7 @@ vector<int> generate_reference_point(const vector<Transaction>& data, const stri
 // ------------------------------------------------------------------------- ladowanie danych
 
 
-
+/*
 std::vector<Transaction> load_sample_data() {
     return {
         {1, {'A', 'B', 'C'}, "G1"}, {2, {'A', 'B', 'C', 'D'}, "G1"},
@@ -51,6 +51,22 @@ std::vector<Transaction> load_sample_data() {
         {7, {'V', 'X', 'Y', 'Z'}, "G2"}, {8, {'U', 'X', 'Y', 'Z'}, "G2"}
     };
 }
+*/
+
+std::vector<Transaction> load_sample_data() {
+    return {
+        {1, {'a', 'b', 'c'}, "G1"}, 
+        {2, {'c', 'd', 'x', 'y'}, "G1"},
+        {3, {'b', 'u', 'x', 'y', 'z'}, "G1"}, 
+        {4, {'d', 'u', 'v', 'y', 'z'}, "G1"},
+        {5, {'a', 'b', 'e'}, "G2"}, 
+        {6, {'e', 'f', 'x'}, "G2"},
+        {7, {'u', 'v', 'x', 'y', 'z'}, "G2"}, 
+        {8, {'a', 'd', 'f'}, "G2"}
+    };
+}
+
+
 
 vector<Transaction> load_voting_data(const string& filename) {
     vector<Transaction> data;
