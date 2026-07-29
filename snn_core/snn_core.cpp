@@ -96,6 +96,12 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
         });
     }
 
+    // DODANE - tablica do szybkiego znalezienia pozycji punktu i w posortowanej tablicy
+    vector<int> rank_of(n);
+    if (use_ti) {
+        for (int idx = 0; idx < n; idx++) rank_of[sorted_indices[idx]] = idx;
+    }
+
     auto t_prep_end = chrono::high_resolution_clock::now();
     result.time_prep = chrono::duration<double>(t_prep_end - t_prep_start).count();
     auto t_knn_start = chrono::high_resolution_clock::now();
@@ -108,11 +114,42 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
         bool maxEps_set = false;
         double local_max_naive = 0.0;
         
-        for (int idx = 0; idx < n; idx++) {
-            int j = sorted_indices[idx];
 
-            if (i == j) continue;
-            
+        // DODANE
+        int left = -1, right = -1;
+        if (use_ti) {
+            int pos_i = rank_of[i];
+            left = pos_i - 1;
+            right = pos_i + 1;
+        }
+
+
+        for (int step = 0; step < n; step++) {
+            int j; // sprawdzany
+
+
+            if (use_ti) {
+                if(step == 0) {
+                    j=i;
+                } else {
+                    if(left >= 0 && right < n) {
+                        double diff_left = dist_to_R[i] - dist_to_R[sorted_indices[left]];
+                        double diff_right = dist_to_R[sorted_indices[right]] - dist_to_R[i];
+
+                        if(diff_left < diff_right) j = sorted_indices[left--];
+                        else j = sorted_indices[right++];
+                    } else if (left >= 0) {
+                        j = sorted_indices[left--];
+                    } else {
+                        j = sorted_indices[right++];
+                    }
+                }
+            } else {
+                j = sorted_indices[step];
+            }
+
+
+            if (i == j) continue; 
             double eps = 1.0; 
             
             if (aktualni_sasiedzi.size() == k) {
@@ -127,11 +164,8 @@ KNNResult find_knn(const vector<Transaction>& data, int k, const vector<int>& R_
                 if (use_ti) {
                     double diff = dist_to_R[j] - dist_to_R[i];
 
-                    if (diff > eps) {
+                    if (abs(diff) > eps) {
                         break; 
-                    }
-                    if (-diff > eps) { 
-                        continue; 
                     }
                 }
             }
